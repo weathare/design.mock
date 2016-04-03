@@ -1,0 +1,104 @@
+$FontAwesomePath: "../fonts/font-awesome";
+
+@import "compass";
+@import "font-awesome/font-awesome.scss";
+
+$body-width: 800px;
+
+$font-s: 12px;
+$font-m: 14px;
+$font-l: 16px;
+$font-weight-regular: normal;
+$font-weight-bold: 700;
+
+$color-black: #111;
+$color-darkgray: #404040;
+$color-white: #fefefe;
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+}
+
+body {
+  margin: 0 auto;
+  max-width: $body-width;
+  font-size: $font-m;
+  font-weight: $font-weight-regular;
+  color: $color-black;
+}
+
+article.keep_list {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    background-color: $color-white;
+    list-style: outside none;
+    padding: 1em;
+  }
+  li + li {
+    margin-top: 10px;
+  }
+}
+
+.wrap {
+  word-wrap: break-all;
+  display: block;
+  width: 100%;
+
+  .image {
+    vertical-align: top;
+    float: left;
+
+    figure {
+      margin: 0;
+      margin-right: 1em;
+      padding: 0;
+
+      $image-size: 256px;
+      width: $image-size;
+      height: $image-size;
+      max-width: $image-size;
+
+      overflow: hidden;
+      background-color: $color-white;
+      border-radius: 4px;
+
+      img {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: 100%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .line {
+    overflow: hidden;
+    zoom: 1;
+
+    div + div {
+      margin-top: .6em;
+    }
+
+    .shop_name, .catchcopy {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .shop_name {
+      font-weight: $font-weight-bold;
+    }
+  }
+}

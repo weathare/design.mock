@@ -1,0 +1,34 @@
+# config
+.git.local
+
+.DS_Store
+Thumbs.db
+.idea
+
+logs
+*.log
+*.bak
+
+pids
+*.pid
+*.seed
+
+# SASS
+.sass-cache
+
+# SVN
+.svn/
+
+# Vagrant
+.vagrant/
+
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+
+# session
+Session.vim
+
+# temporary
+.netrwhist
+*~
